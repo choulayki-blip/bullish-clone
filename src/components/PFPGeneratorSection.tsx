@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import meme1 from "@/assets/meme-1.jpg";
 import character1 from "@/assets/character-1.jpg";
 import character2 from "@/assets/character-2.jpg";
 import bullMascot from "@/assets/bull-mascot.jpg";
 
 const PFPGeneratorSection = () => {
+  const navigate = useNavigate();
   const memeImages = [meme1, character1, character2, bullMascot, meme1, character1, character2];
 
   return (
@@ -17,6 +19,7 @@ const PFPGeneratorSection = () => {
         <div className="flex justify-center mb-12">
           <Button 
             size="lg"
+            onClick={() => navigate('/pfp-generator')}
             className="bg-primary text-primary-foreground hover:bg-primary/90 neon-glow font-bold text-xl px-12 py-6"
           >
             Generate PFP!
