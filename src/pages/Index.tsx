@@ -1,6 +1,10 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ScrollingTicker from "@/components/ScrollingTicker";
+import AboutSection from "@/components/AboutSection";
+import StatsSection from "@/components/StatsSection";
+import PFPGeneratorSection from "@/components/PFPGeneratorSection";
+import LamboSection from "@/components/LamboSection";
 
 const Index = () => {
   return (
@@ -9,6 +13,10 @@ const Index = () => {
       <main className="pt-20">
         <HeroSection />
         <ScrollingTicker />
+        <AboutSection />
+        <StatsSection />
+        <PFPGeneratorSection />
+        <LamboSection />
       </main>
     </div>
   );
