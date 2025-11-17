@@ -15,8 +15,8 @@ const Index = () => {
         <ScrollingTicker />
         <AboutSection />
         <StatsSection />
-        <PFPGeneratorSection />
         <LamboSection />
+        <PFPGeneratorSection />
       </main>
     </div>
   );

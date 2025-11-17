@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 import character1 from "@/assets/character-1.jpg";
 import character2 from "@/assets/character-2.jpg";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
+  const scrollToPFP = () => {
+    document.getElementById('pfp-generator')?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -40,7 +41,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4">
               <Button 
                 size="lg" 
-                onClick={() => navigate('/pfp-generator')}
+                onClick={scrollToPFP}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 neon-glow font-bold text-lg px-8"
               >
                 PFP Generator
